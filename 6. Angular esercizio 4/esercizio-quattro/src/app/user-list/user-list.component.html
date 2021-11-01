@@ -1,0 +1,8 @@
+<ol class="justify-content-center m-5">
+  <li class="mb-3" *ngFor="let u of users">
+    <img src="{{u.profilePhotoUrl}}" width="100">
+    <span><b> {{ u.name }} {{ u.surname }} </b></span>
+    <span> {{ u.age }} </span>
+    <span> {{ u.address.city }} </span>
+  </li>
+</ol>
