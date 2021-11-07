@@ -1,0 +1,5 @@
+<ol class="justify-content-center align-items-center m-5">
+    <li class="mb-3" *ngFor="let u of users">
+        <es5-user-single [user]=u (deleted)="removeUserFromList($event)"></es5-user-single>
+    </li>
+</ol>
