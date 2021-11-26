@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { IObj, Role, Gender } from '../../../../../1. Typescript esercizio 1/start';
+import { IUser } from '../../../../../1. Typescript esercizio 1/start';
 
 @Component({
   selector: 'es2-user-details',
@@ -8,7 +8,7 @@ import { IObj, Role, Gender } from '../../../../../1. Typescript esercizio 1/sta
   styleUrls: ['./user-details.component.css']
 })
 export class UserDetailsComponent implements OnInit {
-  @Input() user!: IObj;
+  @Input() user!: IUser;
 
   constructor() { }
 
