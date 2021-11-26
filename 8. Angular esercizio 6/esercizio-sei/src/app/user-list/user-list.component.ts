@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { IObj, Role, Gender } from '../../../../../1. Typescript esercizio 1/start';
+import { IUser, Role, Gender } from '../../../../../1. Typescript esercizio 1/start';
 
 @Component({
   selector: 'es6-user-list',
   templateUrl: './user-list.component.html',
   styleUrls: ['./user-list.component.css']
 })
+
 export class UserListComponent implements OnInit {
 
-  users: IObj[] = [
+  users: IUser[] = [
     {
       id: 3487,
       name: 'Mario',
@@ -64,7 +65,7 @@ export class UserListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  removeUserFromList(user: IObj) {
+  removeUserFromList(user: IUser) {
     this.users.splice(this.users.indexOf(user), 1);
   }
 }

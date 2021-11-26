@@ -1,4 +1,4 @@
-<div *ngIf="users.length > 0 else noUsers">
+<div *ngIf="users.length > 0; else noUsers">
     <ol class="justify-content-center align-items-center m-5">
         <li class="mb-3" *ngFor="let u of users">
             <es6-user-single [user]=u (deleted)="removeUserFromList($event)"></es6-user-single>
