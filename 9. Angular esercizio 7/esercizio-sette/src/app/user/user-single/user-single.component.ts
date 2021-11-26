@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { IObj } from '../../../../../../1. Typescript esercizio 1/start';
+import { IUser } from '../../../../../../1. Typescript esercizio 1/start';
 
 @Component({
   selector: 'es7-user-single',
@@ -7,8 +7,8 @@ import { IObj } from '../../../../../../1. Typescript esercizio 1/start';
   styleUrls: ['./user-single.component.css']
 })
 export class UserSingleComponent implements OnInit {
-  @Input() user!: IObj;
-  @Output() deleted = new EventEmitter<IObj>();
+  @Input() user!: IUser;
+  @Output() deleted = new EventEmitter<IUser>();
 
   constructor() { }
 

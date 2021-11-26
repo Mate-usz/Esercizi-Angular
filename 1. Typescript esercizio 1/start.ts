@@ -24,7 +24,7 @@ export interface ICompany {
     location: IAddress
 }
 
-export interface IObj {
+export interface IUser {
     id: number,
     name: string,
     surname: string,
