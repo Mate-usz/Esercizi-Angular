@@ -1,0 +1,18 @@
+<div *ngIf="users.length > 0 else noUsers">
+    <ol class="justify-content-center align-items-center m-5">
+        <li class="mb-3" *ngFor="let u of users">
+            <div [ngClass]="{'border': true,
+                            'border-warning': u.role == 'admin', 
+                            'border-info': u.role == 'staff',
+                            'border-success': u.role == 'manager',
+                            'border-primary': u.role == 'student'}">
+                <es7-user-single [user]=u (deleted)="removeUserFromList($event)">
+                </es7-user-single>
+            </div>
+        </li>
+    </ol>
+</div>
+
+<ng-template #noUsers>
+    Non sono presenti utenti.
+</ng-template>
