@@ -1,0 +1,25 @@
+<!-- <div *ngFor="let item of user | keyvalue">
+  <p>{{ item.key }}: {{ item.value }}</p>
+</div> -->
+
+<div>
+  <p>id: {{ user.id }}</p>
+  <p>Name: {{ user.name }}</p>
+  <p>Surname: {{ user.surname }}</p>
+  <p>Age: {{ user.age }}</p>
+  <p>Date of birth: {{ user.dateOfBirth | date }}</p>
+  <div><b>Address:</b>
+    <p *ngFor="let k of user.address | keyvalue">
+      {{ k.key}}: {{ k.value }}
+    </p>
+  </div>
+  <p>Role: {{ user.role }}</p>
+  <p>username: {{ user.username }}</p>
+  <img src={{user.profilePhotoUrl}} width="500"/>
+  <p>Gender: {{ user.gender }}</p>
+
+  <div *ngFor="let c of user.companies">
+    <b>Company: {{ c.name }} </b>
+    <p>Description: {{ c.description }}</p>
+  </div>
+</div>
