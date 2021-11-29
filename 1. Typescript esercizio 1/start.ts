@@ -24,7 +24,7 @@ export interface ICompany{
     location: IAddress
 }
 
-export interface IObj{
+export interface IUser{
     id: number,
     name: string,
     surname: string,
@@ -34,7 +34,7 @@ export interface IObj{
     role: Role,
     username: string,
     profilePhotoUrl: string,
-    companies: ICompany[],
+    companies?: ICompany[],
     gender: Gender
 }
 
